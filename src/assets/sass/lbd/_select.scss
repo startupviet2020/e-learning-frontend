@@ -1,0 +1,19 @@
+.sm-select {
+  :global .Select-control {
+      height: 30px;
+  }
+  :global .Select-placeholder {
+      line-height: 20px
+  }
+  :global .Select-value {
+    line-height: 26px !important;
+  }
+
+  :global .Select-value-label {
+      line-height: 26px;
+    }
+
+  :global .Select-input {
+    height: 26px;
+  }
+}
