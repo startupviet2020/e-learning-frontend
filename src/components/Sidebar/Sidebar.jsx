@@ -81,7 +81,7 @@ class Sidebar extends Component {
             href="/"
             className="simple-text logo-normal"
           >
-            E-INVOICE
+            E-LEARNING
           </a>
         </div>
         <div className="sidebar-wrapper" ref="sidebarWrapper">
