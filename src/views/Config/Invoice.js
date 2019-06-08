@@ -38,7 +38,7 @@ class IssueInvoice extends Component {
                       <div className="row">
                         <div className="col-md-12">
                           <FormGroup>
-                            <ControlLabel>Sếp loại</ControlLabel><span className="star">*</span>
+                            <ControlLabel>Xếp loại</ControlLabel><span className="star">*</span>
                             <FormControl className="validate-error" placeholder="Sếp loại" maxLength="20" type="text" />
                           </FormGroup>
                         </div>

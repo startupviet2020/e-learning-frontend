@@ -13,6 +13,7 @@ import QuizList from "views/Admin/Quiz/List.js";
 import Quiz1List from "views/Admin/Quiz1/List.js";
 import Quiz2List from "views/Admin/Quiz2/List.js";
 import Quiz3List from "views/Admin/Quiz3/List.js";
+import DashBoard from "views/Admin/DashBoard/Invoice.jsx";
 
 
 
@@ -27,7 +28,8 @@ var workspaceRoutes = [
   {
     path: "/admin/dashboard",
     name: "Thống kê",
-    icon: "pe-7s-graph"
+    icon: "pe-7s-graph",
+    component: DashBoard
   },
   // {
   //   path: "/invoices/edit",
@@ -155,7 +157,7 @@ var workspaceRoutes = [
       },
       {
         path: "/admin/resultkq/list",
-        name: "Kết quả sếp loại",
+        name: "Kết quả Xếp loại",
         mini: "K",
         component: ConfigInvoice
       },
