@@ -98,7 +98,7 @@ class EditLession extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Tên bài giảng</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Tên sản phẩm" maxLength="250" type="text" name="name" value={product.name} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Tên bài giảng" maxLength="250" type="text" name="name" value={product.name} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>
@@ -106,7 +106,7 @@ class EditLession extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Link video</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Đơn vị" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Link video" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>
@@ -114,7 +114,7 @@ class EditLession extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Tóm tắt nội dung</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Đơn vị" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Tóm tắt nội dung" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>
@@ -122,7 +122,7 @@ class EditLession extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Nội dung</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Đơn vị" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Nội dung" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>
@@ -130,7 +130,7 @@ class EditLession extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Môn học</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Đơn vị" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Môn học" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>
@@ -138,7 +138,7 @@ class EditLession extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Học phí</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Đơn vị" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Học phí" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>

@@ -12,7 +12,7 @@ import SweetAlert from "react-bootstrap-sweetalert";
 import Card from "components/Card/Card.jsx";
 import Button from "components/CustomButton/CustomButton.jsx";
 import EditProduct from './Edit';
-import image1 from '../../../assets/img/monhoc.jpg';
+import image1 from '../../../assets/img/baigiang.jpg';
 
 // import { getProducts, updateProduct, deleteProduct } from '../../actions/product';
 
@@ -170,14 +170,14 @@ class CourseList extends Component {
                             <div>1</div>
                           </td>
                           <td>
-                          <div><img width={100} height={100}  alt="Logo" /></div>
+                          <div><img width={100} height={100} src={image1}  alt="Logo" /></div>
                           </td>
                           <td>
                             <div>1.Vận tốc</div>
                           </td>
                           <td><div>Số thập phân</div> </td>
                           <td><div>HHQ50</div> </td>
-                          <td><div>Import excelc</div> </td>
+                          <td><div>Import excel</div> </td>
                           <td><div>Có</div> </td>
                           <td><div>Active</div>
                           </td>
@@ -188,14 +188,14 @@ class CourseList extends Component {
                             <div>1</div>
                           </td>
                           <td>
-                          <div><img width={100} height={100}  alt="Logo" /></div>
+                          <div><img width={100} height={100} src={image1}  alt="Logo" /></div>
                           </td>
                           <td>
                             <div>1.Quãng đường</div>
                           </td>
                           <td><div>Số thập phân</div> </td>
                           <td><div>HHQ50</div> </td>
-                          <td><div>Import excelc</div> </td>
+                          <td><div>Import excel</div> </td>
                           <td><div>Có</div> </td>
                           <td><div>Active</div></td>
                           <td>{this.renderActionButtons(null)}</td>
@@ -205,14 +205,14 @@ class CourseList extends Component {
                             <div>1</div>
                           </td>
                           <td>
-                          <div><img width={100} height={100} alt="Logo" /></div>
+                          <div><img width={100} height={100} src={image1} alt="Logo" /></div>
                           </td>
                           <td>
                             <div>1.Thời gian</div>
                           </td>
                           <td><div>Số thập phân</div> </td>
                           <td><div>HHQ50</div> </td>
-                          <td><div>Import excelc</div> </td>
+                          <td><div>Import excel</div> </td>
                           <td><div>Có</div> </td>
                           <td><div>Active</div></td>
                           <td>{this.renderActionButtons(null)}</td>

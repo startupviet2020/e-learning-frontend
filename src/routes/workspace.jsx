@@ -8,6 +8,12 @@ import TeacherList from "views/Admin/Teacher/List.js";
 import SubjectList from "views/Admin/Subject/List.js";
 import LessionList from "views/Admin/Lession/List.js";
 import CourseList from "views/Admin/Course/List.js";
+import ClassList from "views/Admin/Class/List.js";
+import QuizList from "views/Admin/Quiz/List.js";
+import Quiz1List from "views/Admin/Quiz1/List.js";
+import Quiz2List from "views/Admin/Quiz2/List.js";
+import Quiz3List from "views/Admin/Quiz3/List.js";
+
 
 
 var workspaceRoutes = [
@@ -58,7 +64,7 @@ var workspaceRoutes = [
         path: "/admin/class/list",
         name: "Lớp học",
         mini: "LH",
-        component: CustomerList
+        component: ClassList
       }
     ]
   },
@@ -78,7 +84,7 @@ var workspaceRoutes = [
           path: "/admin/quiz/list",
           name: "Câu hỏi luyện quiz",
           mini: "CQ",
-          component: CustomerList
+          component: QuizList
         }
       ]
     },
@@ -92,19 +98,19 @@ var workspaceRoutes = [
             path: "/admin/thematic/list",
             name: "Danh sách chuyên đề",
             mini: "BS",
-            component: ProductList
+            component: Quiz1List
           },
           {
             path: "/admin/question/list",
             name: "Câu hỏi luyện thi",
             mini: "CT",
-            component: CustomerList
+            component: QuizList
           },
           {
             path: "/admin/questionlist/list",
             name: "Danh mục luyện thi tuần",
             mini: "LT",
-            component: CustomerList
+            component: Quiz2List
           }
         ]
       },
@@ -118,20 +124,20 @@ var workspaceRoutes = [
               path: "/admin/slide/list",
               name: "Quản lý slide",
               mini: "BI",
-              component: ProductList
+              component: Quiz3List
             },
-            {
-              path: "/admin/new/list",
-              name: "Tin tức",
-              mini: "CE",
-              component: CustomerList
-            },
-            {
-              path: "/admin/q&a/list",
-              name: "Hỏi đáp",
-              mini: "LO",
-              component: CustomerList
-            }
+            // {
+            //   path: "/admin/new/list",
+            //   name: "Tin tức",
+            //   mini: "CE",
+            //   component: CustomerList
+            // },
+            // {
+            //   path: "/admin/q&a/list",
+            //   name: "Hỏi đáp",
+            //   mini: "LO",
+            //   component: CustomerList
+            // }
           ]
         },
   {

@@ -12,11 +12,11 @@ import SweetAlert from "react-bootstrap-sweetalert";
 import Card from "components/Card/Card.jsx";
 import Button from "components/CustomButton/CustomButton.jsx";
 import EditProduct from './Edit';
-import image1 from '../../../assets/img/monhoc.jpg';
+import image1 from '../../../assets/img/faces/image1.jpg';
 
 // import { getProducts, updateProduct, deleteProduct } from '../../actions/product';
 
-class CourseList extends Component {
+class ClassList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -154,13 +154,9 @@ class CourseList extends Component {
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>Hình ảnh</th>
-                          <th>Mã khóa học</th>
                           <th>Lớp</th>
-                          <th>Tên khóa học</th>
-                          <th>Môn học</th>
-                          <th>Học phí</th>
-                          <th>Trạng thái</th>
+                          <th>Khóa học</th>
+                          <th>Thao tác</th>
                           <th></th>
                         </tr>
                       </thead>
@@ -170,54 +166,47 @@ class CourseList extends Component {
                             <div>1</div>
                           </td>
                           <td>
-                          <div><img width={100} height={100} src={image1} alt="Logo" /></div>
+                            <div>Lớp 5</div>
                           </td>
                           <td>
-                            <div>HHQ41</div>
-                          </td>
-
-                          <td><div>Lớp 4</div></td>
-                          <td><div>Nâng cao</div></td>
-                          <td><div>Môn học</div></td>
-                          <td><div>Học phí</div></td>
-                          <td><div>Trạng thái</div></td>
-                          <td>{this.renderActionButtons(null)}</td>
-                        </tr>
-                        <tr>
-                        <td>
-                            <div>1</div>
-                          </td>
-                          <td>
-                          <div><img width={100} height={100} src={image1} alt="Logo" /></div>
-                          </td>
-                          <td>
-                            <div>HHQ42</div>
-                          </td>
-                          <td>
-                          <div>Lớp 5</div></td>
-                          <td> <div>Cơ bản</div></td>
-                          <td><div>Môn học</div></td>
-                          <td> <div>Học phí</div></td>
-                          <td><div>Trạng thái</div>
+                            <div>2 khóa học</div>
                           </td>
                           <td>{this.renderActionButtons(null)}</td>
                         </tr>
                         <tr>
                         <td>
-                            <div>1</div>
+                            <div>2</div>
                           </td>
                           <td>
-                          <div><img width={100} height={100} src={image1} alt="Logo" /></div>
+                            <div>Lớp 4</div>
                           </td>
                           <td>
-                            <div>HHQ43</div>
+                            <div>3 khóa học</div>
+                          </td>
+                          <td>{this.renderActionButtons(null)}</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div>3</div>
                           </td>
                           <td>
-                          <div>Lớp 6</div></td>
-                          <td><div>Nâng cao</div></td>
-                          <td> <div>Môn học</div></td>
-                          <td><div>Học phí</div></td>
-                          <td><div>Trạng thái</div></td>
+                            <div>Lớp 3</div>
+                          </td>
+                          <td>
+                            <div>1 khóa học</div>
+                          </td>
+                          <td>{this.renderActionButtons(null)}</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div>4</div>
+                          </td>
+                          <td>
+                            <div>Lớp 7</div>
+                          </td>
+                          <td>
+                            <div>1 khóa học</div>
+                          </td>
                           <td>{this.renderActionButtons(null)}</td>
                         </tr>
                         {/* {
@@ -270,5 +259,5 @@ const mapDispatchToProps = dispatch => (
   }
 );
 
-export default connect(mapStateToProps, mapDispatchToProps)(CourseList);
+export default connect(mapStateToProps, mapDispatchToProps)(ClassList);
 

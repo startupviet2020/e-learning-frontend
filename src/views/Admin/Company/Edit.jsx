@@ -77,7 +77,7 @@ class EditCompany extends Component {
     return (
       <Modal show={this.state.showModal} onHide={this.onCloseModal} backdrop="static">
         <Modal.Header closeButton>
-          <Modal.Title>Thông tin công ty</Modal.Title>
+          <Modal.Title>Thông tin tài khoản</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Grid fluid>
@@ -90,8 +90,8 @@ class EditCompany extends Component {
                         <div className="row">
                           <div className="col-md-12">
                             <FormGroup>
-                              <ControlLabel>Tên công ty</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Tên công ty" maxLength="250" type="text" value={company.name} name="name" onChange={this.handleChange} />
+                              <ControlLabel>Tên tài khoản</ControlLabel><span className="star">*</span>
+                              <FormControl className="validate-error" placeholder="Tên tài khoản" maxLength="250" type="text" value={company.name} name="name" onChange={this.handleChange} />
                             </FormGroup>
                           </div>
                         </div>

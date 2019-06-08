@@ -82,43 +82,47 @@ class UpdateCompanyInfo extends Component {
                       <div className="row">
                         <div className="col-md-12">
                           <FormGroup>
-                            <ControlLabel>Tên công ty</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Tên công ty" maxLength="100" type="text" value={company.name} name="name" onChange={this.handleChange}/>
-                          </FormGroup>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-md-12">
-                          <FormGroup>
-                            <ControlLabel>Đơn vị chủ quản</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Đơn vị chủ quản" maxLength="100" type="text" value={company.managing_unit} name="managing_unit" onChange={this.handleChange} />
-                          </FormGroup>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-md-12">
-                          <FormGroup>
-                            <ControlLabel>Địa chỉ trụ sở</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Địa chỉ trụ sở" maxLength="250" type="text" value={company.address} name="address" onChange={this.handleChange}/>
+                            <ControlLabel>Tên đề thi</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Tên đề thi" maxLength="100" type="text" value={company.name} name="name" onChange={this.handleChange}/>
                           </FormGroup>
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-md-4">
                           <FormGroup>
-                            <ControlLabel>Mã số thuế</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Mã số thuế" maxLength="20" type="text" value={company.tax_code} name="tax_code" onChange={this.handleChange}/>
+                            <ControlLabel>Số câu level 1</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Số câu level 1" maxLength="100" type="text" value={company.managing_unit} name="managing_unit" onChange={this.handleChange} />
                           </FormGroup>
                         </div>
                         <div className="col-md-4">
                           <FormGroup>
-                            <ControlLabel>Đơn vị tiền tệ</ControlLabel>
-                            <FormControl className="validate-error" placeholder="Đơn vị tiền tệ" maxLength="4" type="text" value={company.currency_unit} name="currency_unit" onChange={this.handleChange}/>
+                            <ControlLabel>Số câu level 2</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Số câu level 2" maxLength="250" type="text" value={company.address} name="address" onChange={this.handleChange}/>
+                          </FormGroup>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-4">
+                          <FormGroup>
+                            <ControlLabel>Số câu level 3</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Số câu level 3" maxLength="20" type="text" value={company.tax_code} name="tax_code" onChange={this.handleChange}/>
                           </FormGroup>
                         </div>
                         <div className="col-md-4">
                           <FormGroup>
-                            <ControlLabel>Loại hoá đơn</ControlLabel><span className="star">*</span>
+                            <ControlLabel>Số câu level 4</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Số câu level 4" maxLength="20" type="text" value={company.tax_code} name="tax_code" onChange={this.handleChange}/>
+                          </FormGroup>
+                        </div>
+                        <div className="col-md-4">
+                          <FormGroup>
+                            <ControlLabel>Thời gian làm bài</ControlLabel>
+                            <FormControl className="validate-error" placeholder="Thời gian làm bài" maxLength="4" type="text" value={company.currency_unit} name="currency_unit" onChange={this.handleChange}/>
+                          </FormGroup>
+                        </div>
+                        {/* <div className="col-md-4">
+                          <FormGroup>
+                            <ControlLabel>Loại câu hỏi</ControlLabel><span className="star">*</span>
                             <Select
                               placeholder={`Chọn loại hoá đơn`}
                               value={1}
@@ -126,16 +130,22 @@ class UpdateCompanyInfo extends Component {
                               className={"validate-error"}
                             />
                           </FormGroup>
-                        </div>
+                        </div> */}
                       </div>
                       <div className="row">
                         <div className="col-md-4">
                           <FormGroup>
-                            <ControlLabel>Số điện thoại</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Số điện thoại" maxLength="50" type="text" value={company.phone} name="phone" onChange={this.handleChange}/>
+                            <ControlLabel>Từ tuần</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Từ tuần" maxLength="50" type="text" value={company.phone} name="phone" onChange={this.handleChange}/>
                           </FormGroup>
                         </div>
                         <div className="col-md-4">
+                          <FormGroup>
+                            <ControlLabel>Đến tuần</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Đến tuần" maxLength="50" type="text" value={company.phone} name="phone" onChange={this.handleChange}/>
+                          </FormGroup>
+                        </div>
+                        {/* <div className="col-md-4">
                           <FormGroup>
                             <ControlLabel>Fax</ControlLabel>
                             <FormControl className="validate-error" placeholder="Fax" maxLength="50" type="text" value={company.fax} name="fax" onChange={this.handleChange}/>
@@ -146,9 +156,9 @@ class UpdateCompanyInfo extends Component {
                             <ControlLabel>Email</ControlLabel>
                             <FormControl className="validate-error" placeholder="Email" maxLength="50" type="text" value={company.email} name="email" onChange={this.handleChange}/>
                           </FormGroup>
-                        </div>
+                        </div> */}
                       </div>
-                      <div className="row">
+                      {/* <div className="row">
                         <div className="col-md-4">
                           <FormGroup>
                             <ControlLabel>Tài khoản ngân hàng</ControlLabel>
@@ -194,7 +204,7 @@ class UpdateCompanyInfo extends Component {
                         <div className="col-md-12">
                           <Button bsStyle="info" pullRight fill type="button" onClick={this.updateCompany}>Cập nhật</Button>
                         </div>
-                      </div>
+                      </div> */}
                       <div className="clearfix" />
                     </form>
                   </div>

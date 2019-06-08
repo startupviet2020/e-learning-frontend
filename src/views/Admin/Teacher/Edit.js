@@ -98,7 +98,7 @@ class EditTeacher extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Họ và tên</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Tên sản phẩm" maxLength="250" type="text" name="name" value={product.name} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Họ và tên" maxLength="250" type="text" name="name" value={product.name} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>
@@ -106,7 +106,7 @@ class EditTeacher extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Email</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Đơn vị" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Email" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>

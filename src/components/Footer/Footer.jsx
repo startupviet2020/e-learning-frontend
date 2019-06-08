@@ -9,7 +9,7 @@ class Footer extends Component {
           (this.props.transparent !== undefined ? " footer-transparent" : "")
         }
       >
-        <div
+        {/* <div
           className={
             "container" + (this.props.fluid !== undefined ? "-fluid" : "")
           }
@@ -35,7 +35,7 @@ class Footer extends Component {
             <a href="/">E-Invoice</a>, made with{" "}
             <i className="fa fa-heart heart" /> for a better web
           </p>
-        </div>
+        </div> */}
       </footer>
     );
   }

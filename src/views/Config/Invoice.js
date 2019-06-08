@@ -38,8 +38,8 @@ class IssueInvoice extends Component {
                       <div className="row">
                         <div className="col-md-12">
                           <FormGroup>
-                            <ControlLabel>Mẫu số hoá đơn</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Mẫu số hoá đơn" maxLength="20" type="text" />
+                            <ControlLabel>Sếp loại</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Sếp loại" maxLength="20" type="text" />
                           </FormGroup>
                         </div>
                       </div>
@@ -47,8 +47,8 @@ class IssueInvoice extends Component {
                       <div className="row">
                         <div className="col-md-12">
                           <FormGroup>
-                            <ControlLabel>Ký hiệu hoá đơn</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Ký hiệu hoá đơn" maxLength="20" type="text" />
+                            <ControlLabel>Nhận xét</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Nhận xét " maxLength="20" type="text" />
                           </FormGroup>
                         </div>
                       </div>
@@ -56,8 +56,8 @@ class IssueInvoice extends Component {
                       <div className="row">
                         <div className="col-md-12">
                           <FormGroup>
-                            <ControlLabel>Từ số</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Từ số" maxLength="7" type="text" />
+                            <ControlLabel>Điểm từ</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Điểm từ" maxLength="7" type="text" />
                           </FormGroup>
                         </div>
                       </div>
@@ -65,8 +65,8 @@ class IssueInvoice extends Component {
                       <div className="row">
                         <div className="col-md-12">
                           <FormGroup>
-                            <ControlLabel>Đến số</ControlLabel><span className="star">*</span>
-                            <FormControl className="validate-error" placeholder="Đến số" maxLength="7" type="text" />
+                            <ControlLabel>Đến điểm</ControlLabel><span className="star">*</span>
+                            <FormControl className="validate-error" placeholder="Đến điểm" maxLength="7" type="text" />
                           </FormGroup>
                         </div>
                       </div>

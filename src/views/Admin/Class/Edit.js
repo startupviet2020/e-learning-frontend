@@ -15,7 +15,7 @@ import Button from "components/CustomButton/CustomButton.jsx";
 import Upload from "components/Upload.jsx";
 //import { updateProduct } from '../../actions/product';
 
-class EditCourse extends Component {
+class EditTeacher extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -84,7 +84,7 @@ class EditCourse extends Component {
     return (
       <Modal show={this.state.showModal} onHide={this.onCloseModal} backdrop="static">
         <Modal.Header closeButton>
-          <Modal.Title>Thông tin khóa học</Modal.Title>
+          <Modal.Title>Thông tin lớp học</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Grid fluid>
@@ -97,8 +97,8 @@ class EditCourse extends Component {
                         <div className="row">
                           <div className="col-md-12">
                             <FormGroup>
-                              <ControlLabel>Mã khóa học</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Mã khóa học" maxLength="250" type="text" name="name" value={product.name} onChange={this.handleChange}/>
+                              <ControlLabel>Lớp học</ControlLabel><span className="star">*</span>
+                              <FormControl className="validate-error" placeholder="Tên sản phẩm" maxLength="250" type="text" name="name" value={product.name} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>
@@ -106,46 +106,14 @@ class EditCourse extends Component {
                           <div className="col-md-12">
                             <FormGroup>
                               <ControlLabel>Khóa học</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Khóa học" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
-                            </FormGroup>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-12">
-                            <FormGroup>
-                              <ControlLabel>Lớp</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Lớp" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
-                            </FormGroup>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-12">
-                            <FormGroup>
-                              <ControlLabel>Tên khóa học</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Tên khóa học" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
-                            </FormGroup>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-12">
-                            <FormGroup>
-                              <ControlLabel>Môn học</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Môn học" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
-                            </FormGroup>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-12">
-                            <FormGroup>
-                              <ControlLabel>Học phí</ControlLabel><span className="star">*</span>
-                              <FormControl className="validate-error" placeholder="Học phí" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
+                              <FormControl className="validate-error" placeholder="Đơn vị" maxLength="20" type="text" name="unit" value={product.unit} onChange={this.handleChange}/>
                             </FormGroup>
                           </div>
                         </div>
                         <div className="row">
                         <div className="col-md-12">
                           <FormGroup>
-                            <ControlLabel>Hình ảnh</ControlLabel>
+                            <ControlLabel>Logo</ControlLabel>
                             <Upload />
                           </FormGroup>
                       </div>
@@ -185,5 +153,5 @@ const mapDispatchToProps = dispatch => (
   }
 )
 
-export default connect(mapStateToProps, mapDispatchToProps, null, { withRef: true })(EditCourse);
+export default connect(mapStateToProps, mapDispatchToProps, null, { withRef: true })(EditTeacher);
 

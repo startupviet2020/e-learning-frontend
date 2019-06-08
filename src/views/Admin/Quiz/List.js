@@ -12,11 +12,11 @@ import SweetAlert from "react-bootstrap-sweetalert";
 import Card from "components/Card/Card.jsx";
 import Button from "components/CustomButton/CustomButton.jsx";
 import EditProduct from './Edit';
-import image1 from '../../../assets/img/monhoc.jpg';
+import image1 from '../../../assets/img/baigiang.jpg';
 
 // import { getProducts, updateProduct, deleteProduct } from '../../actions/product';
 
-class CourseList extends Component {
+class QuizList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -154,12 +154,12 @@ class CourseList extends Component {
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>Hình ảnh</th>
-                          <th>Mã khóa học</th>
-                          <th>Lớp</th>
-                          <th>Tên khóa học</th>
-                          <th>Môn học</th>
-                          <th>Học phí</th>
+                          <th>Loại</th>
+                          <th>Câu hỏi</th>
+                          <th>Cấp độ</th>
+                          <th>Bài giảng</th>
+                          <th>Chuyên đề</th>
+                          <th>Khóa học</th>
                           <th>Trạng thái</th>
                           <th></th>
                         </tr>
@@ -170,54 +170,50 @@ class CourseList extends Component {
                             <div>1</div>
                           </td>
                           <td>
-                          <div><img width={100} height={100} src={image1} alt="Logo" /></div>
+                          <div> <div>Quiz</div></div>
                           </td>
                           <td>
-                            <div>HHQ41</div>
+                            <div>Phân số 3/5 viết dưới dạng tỉ số phần trăm là:</div>
                           </td>
-
-                          <td><div>Lớp 4</div></td>
-                          <td><div>Nâng cao</div></td>
-                          <td><div>Môn học</div></td>
-                          <td><div>Học phí</div></td>
-                          <td><div>Trạng thái</div></td>
-                          <td>{this.renderActionButtons(null)}</td>
-                        </tr>
-                        <tr>
-                        <td>
-                            <div>1</div>
-                          </td>
-                          <td>
-                          <div><img width={100} height={100} src={image1} alt="Logo" /></div>
-                          </td>
-                          <td>
-                            <div>HHQ42</div>
-                          </td>
-                          <td>
-                          <div>Lớp 5</div></td>
-                          <td> <div>Cơ bản</div></td>
-                          <td><div>Môn học</div></td>
-                          <td> <div>Học phí</div></td>
-                          <td><div>Trạng thái</div>
+                          <td><div>1</div> </td>
+                          <td><div>Tỉ số phần trăm</div> </td>
+                          <td><div>HHQ51</div> </td>
+                          <td><div>Active</div>
                           </td>
                           <td>{this.renderActionButtons(null)}</td>
                         </tr>
                         <tr>
                         <td>
-                            <div>1</div>
+                            <div>2</div>
                           </td>
                           <td>
-                          <div><img width={100} height={100} src={image1} alt="Logo" /></div>
+                          <div> <div>Quiz</div></div>
                           </td>
                           <td>
-                            <div>HHQ43</div>
+                            <div>Phân số 48/100 viết dưới dạng tỉ số phần trăm là:</div>
+                          </td>
+                          <td><div>1</div> </td>
+                          <td><div>Tỉ số phần trăm</div> </td>
+                          <td><div>HHQ52</div> </td>
+                          <td><div>Active</div>
+                          </td>
+                          <td>{this.renderActionButtons(null)}</td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div>3</div>
                           </td>
                           <td>
-                          <div>Lớp 6</div></td>
-                          <td><div>Nâng cao</div></td>
-                          <td> <div>Môn học</div></td>
-                          <td><div>Học phí</div></td>
-                          <td><div>Trạng thái</div></td>
+                          <div> <div>Quiz</div></div>
+                          </td>
+                          <td>
+                            <div>Số thập phân 0,128 viết dưới dạng tỉ số phần trăm là:</div>
+                          </td>
+                          <td><div>1</div> </td>
+                          <td><div>Tỉ số phần trăm</div> </td>
+                          <td><div>HHQ53</div> </td>
+                          <td><div>Active</div>
+                          </td>
                           <td>{this.renderActionButtons(null)}</td>
                         </tr>
                         {/* {
@@ -270,5 +266,5 @@ const mapDispatchToProps = dispatch => (
   }
 );
 
-export default connect(mapStateToProps, mapDispatchToProps)(CourseList);
+export default connect(mapStateToProps, mapDispatchToProps)(QuizList);
 
