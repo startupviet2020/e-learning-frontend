@@ -4,57 +4,58 @@ import ProductList from "views/Products/List.js";
 import CustomerList from "views/Customer/List.jsx";
 import ConfigCompany from "views/Config/Company.js";
 import ConfigInvoice from "views/Config/Invoice.js";
-import Invoice from "views/Invoices/List.js";
-import InvoiceEdit from "views/Invoices/Edit";
+import TeacherList from "views/Admin/Teacher/List.js";
+import SubjectList from "views/Admin/Subject/List.js";
+import LessionList from "views/Admin/Lession/List.js";
+import CourseList from "views/Admin/Course/List.js";
+
 
 var workspaceRoutes = [
+  // {
+  //   path: "/invoices",
+  //   visible:false,
+  //   name: "Hoá đơn",
+  //   icon: "pe-7s-graph",
+  //   component: Invoice
+  // },
   {
-    path: "/invoices",
-    visible:false,
-    name: "Hoá đơn",
-    icon: "pe-7s-graph",
-    component: Invoice
-  },
-  {
-    path: "/invoices",
+    path: "/admin/dashboard",
     name: "Thống kê",
-    icon: "pe-7s-graph",
-    component: Invoice
+    icon: "pe-7s-graph"
   },
+  // {
+  //   path: "/invoices/edit",
+  //   name: "Thông tin hoá đơn",
+  //   icon: "pe-7s-graph",
+  //   visible: false,
+  //   component: InvoiceEdit
+  // },
   {
-    path: "/invoices/edit",
-    name: "Thông tin hoá đơn",
-    icon: "pe-7s-graph",
-    visible: false,
-    component: InvoiceEdit
-  },
-  {
-  collapse: true,
-    path: "/setup",
+    collapse: true,
     name: "Danh mục",
     state: "openList",
     icon: "pe-7s-plugin",
     views: [
       {
-        path: "/setup/products",
+        path: "/admin/teacher/list",
         name: "Giáo viên",
         mini: "GV",
-        component: ProductList
+        component: TeacherList
       },
       {
-        path: "/setup/customers",
+        path: "/admin/subject/list",
         name: "Môn học",
         mini: "MH",
-        component: CustomerList
+        component: SubjectList
       },
       {
-        path: "/setup/customers",
+        path: "/admin/course/list",
         name: "Khóa học",
         mini: "KH",
-        component: CustomerList
+        component: CourseList
       },
       {
-        path: "/setup/customers",
+        path: "/admin/class/list",
         name: "Lớp học",
         mini: "LH",
         component: CustomerList
@@ -62,47 +63,45 @@ var workspaceRoutes = [
     ]
   },
   {
-    collapse: true,
-      path: "/setup",
+      collapse: true,
       name: "Bài giảng và Quiz",
-      state: "openLession&Test",
+      state: "openLession",
       icon: "pe-7s-helm",
       views: [
         {
-          path: "/setup/products",
+          path: "/admin/lession/list",
           name: "Danh sách bài giảng",
           mini: "BG",
-          component: ProductList
+          component: LessionList
         },
         {
-          path: "/setup/customers",
+          path: "/admin/quiz/list",
           name: "Câu hỏi luyện quiz",
-          mini: "CH",
+          mini: "CQ",
           component: CustomerList
         }
       ]
     },
     {
       collapse: true,
-        path: "/setup",
         name: "Luyện thi",
         state: "openPracticeTest",
         icon: "pe-7s-file",
         views: [
           {
-            path: "/setup/products",
+            path: "/admin/thematic/list",
             name: "Danh sách chuyên đề",
-            mini: "BG",
+            mini: "BS",
             component: ProductList
           },
           {
-            path: "/setup/customers",
+            path: "/admin/question/list",
             name: "Câu hỏi luyện thi",
-            mini: "CH",
+            mini: "CT",
             component: CustomerList
           },
           {
-            path: "/setup/customers",
+            path: "/admin/questionlist/list",
             name: "Danh mục luyện thi tuần",
             mini: "LT",
             component: CustomerList
@@ -111,75 +110,72 @@ var workspaceRoutes = [
       },
       {
         collapse: true,
-          path: "/setup",
           name: "Quản trị nội dung",
           state: "openContendManager",
           icon: "pe-7s-note2",
           views: [
             {
-              path: "/setup/products",
+              path: "/admin/slide/list",
               name: "Quản lý slide",
-              mini: "BG",
+              mini: "BI",
               component: ProductList
             },
             {
-              path: "/setup/customers",
+              path: "/admin/new/list",
               name: "Tin tức",
-              mini: "CH",
+              mini: "CE",
               component: CustomerList
             },
             {
-              path: "/setup/customers",
+              path: "/admin/q&a/list",
               name: "Hỏi đáp",
-              mini: "LT",
+              mini: "LO",
               component: CustomerList
             }
           ]
         },
   {
     collapse: true,
-    path: "/config",
     name: "Cài đặt",
     mini: "R",
     icon: "pe-7s-plugin",
     state: "openConfig",
     views: [
       {
-        path: "/config/company",
+        path: "/admin/examcf/list",
         name: "Cấu hình đề thi",
         mini: "C",
         component: ConfigCompany
       },
       {
-        path: "/config/invoice",
+        path: "/admin/resultkq/list",
         name: "Kết quả sếp loại",
-        mini: "C",
+        mini: "K",
         component: ConfigInvoice
       },
     ]
   },
   {
     collapse: true,
-    path: "/settings",
     name: "Quản lý tài khoản",
     state: "openSettings",
     icon: "pe-7s-user-female",
     views: [
       {
-        path: "/admin/companies",
+        path: "/admin/companies/list",
         name: "Danh sách tài khoản",
-        mini: "CO",
+        mini: "CP",
         component: CompanyList
       },
       {
-        path: "/admin/users",
+        path: "/admin/users/list",
         name: "Học viên",
         mini: "US",
         component: UserList
       }
     ]
   },
-  { redirect: true, path: "/", pathTo: "/invoices", name: "Invoice" }
+  { redirect: true, path: "/", pathTo: "/admin/invoices", name: "Invoice" }
 ];
 
 export default workspaceRoutes;

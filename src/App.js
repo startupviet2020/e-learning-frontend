@@ -9,14 +9,15 @@ class App extends React.Component {
     let indexRoutes = [];
     const user = this.props.user;
     let defaultPath = "";
-    if (user.uid > 0 && user.status > 0) {
-      indexRoutes.push({ path: "/", name: "Home", component: Workspace }); 
-    } else {
-      if (user.uid > 0 && user.status === 0) {
-        defaultPath = "/signup";
-      }
-      indexRoutes.push({ path: "/", name: "Landing", component: Pages });
-    }
+    // if (user.uid > 0 && user.status > 0) {
+    //   indexRoutes.push({ path: "/", name: "Home", component: Workspace }); 
+    // } else {
+    //   if (user.uid > 0 && user.status === 0) {
+    //     defaultPath = "/signup";
+    //   }
+    //   indexRoutes.push({ path: "/", name: "Landing", component: Pages });
+    // }
+    indexRoutes.push({ path: "/", name: "Home", component: Workspace }); 
     return (
       <BrowserRouter>
         <Switch>
