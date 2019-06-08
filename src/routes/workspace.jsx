@@ -183,7 +183,7 @@ var workspaceRoutes = [
       }
     ]
   },
-  { redirect: true, path: "/", pathTo: "/admin/invoices", name: "Invoice" }
+  { redirect: true, path: "/", pathTo: "/admin/dashboard", name: "Invoice" }
 ];
 
 export default workspaceRoutes;
