@@ -78,7 +78,7 @@ class Sidebar extends Component {
             </div>
           </a>
           <a
-            href="/"
+            href="/admin/dashboard"
             className="simple-text logo-normal"
           >
             E-LEARNING
