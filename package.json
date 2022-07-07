@@ -7,7 +7,7 @@
     "bootstrap": "3.3.7",
     "chartist": "0.10.1",
     "history": "4.7.2",
-    "moment": "2.21.0",
+    "moment": "2.29.4",
     "node-sass": "4.6.1",
     "node-sass-chokidar": "0.0.3",
     "nouislider": "11.0.3",
